@@ -1,0 +1,15 @@
+prune tests
+prune docs
+prune procrastinate_demo
+
+include LICENSE.rst
+include VERSION.txt
+
+exclude .editorconfig
+exclude .readthedocs.yml
+exclude CHANGELOG.rst
+exclude CODE_OF_CONDUCT.md
+exclude CONTRIBUTING.rst
+exclude pre-commit-hook
+exclude requirements.txt
+exclude tox.ini

@@ -1,0 +1,9 @@
+# Main maintainers
+*                       {{ cookiecutter.codeowners }}
+{% if documentation_codeowners %}
+
+# Documentation
+/docs/                  {{ cookiecutter.documentation_codeowners }}
+*.rst                   {{ cookiecutter.documentation_codeowners }}
+*.md                    {{ cookiecutter.documentation_codeowners }}
+{% endif -%}

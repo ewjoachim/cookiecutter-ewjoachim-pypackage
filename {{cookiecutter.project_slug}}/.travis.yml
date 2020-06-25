@@ -1,0 +1,47 @@
+# Config file for automatic testing at travis-ci.org
+os: linux
+language: python
+cache: pip
+
+env:
+  global:
+    PYTEST_ADDOPTS="--cov-append"
+
+script:
+  - tox -e $TOX_ENV
+
+install:
+  - pip install tox codecov
+  - tox --notest -e $TOX_ENV
+
+after_success:
+- codecov
+
+jobs:
+  include:
+    {%- for version in cookiecutter.python_versions.split(",")|sort %}
+    - stage: test
+      python: {{ version }}
+      env:
+        TOX_ENV: py{{ version.replace(".", "") }}-tests
+    {% endfor %}
+
+    - python: {{ cookiecutter.python_version_main }}
+      env:
+        TOX_ENV: docs
+
+    - stage: deploy
+      if: tag IS present
+      python: {{ cookiecutter.python_version_main }}
+      before_install: true
+      script: true
+      install: true
+      after_success: true
+      deploy:
+        provider: pypi
+        on:
+          repo: {{ cookiecutter.github_full_name }}
+          tags: true
+        username: __token__
+        password:
+          secure: "TODO secure pypi token"
