@@ -30,7 +30,7 @@ def test_set_verbosity(mocker, caplog):
     "raised, expected",
     [
         # Package exception are caught
-        (exceptions.{{ ccokiecutter.top_level_exception_class }}, click.ClickException),
+        (exceptions.{{ cookiecutter.top_level_exception_class }}, click.ClickException),
         # Other exceptions are not
         (ValueError, ValueError),
     ],
@@ -38,7 +38,7 @@ def test_set_verbosity(mocker, caplog):
 def test_handle_errors(raised, expected):
     @cli.handle_errors()
     def raise_exc():
-        raise exceptions.{{ ccokiecutter.top_level_exception_class }}("foo") from IndexError("bar")
+        raise exceptions.{{ cookiecutter.top_level_exception_class }}("foo") from IndexError("bar")
 
     with pytest.raises(click.ClickException) as exc:
         raise_exc()
