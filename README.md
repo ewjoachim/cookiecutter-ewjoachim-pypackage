@@ -4,8 +4,9 @@ My cookiecutter for crafting Python packages with my favorite tooling.
 This has been extracted from [procrastinate](https://github.com/peopledoc/procrastinate).
 
 Feel free to steal from this and adapt it to your needs, though I think taking the whole
-thing as-is is a bad idea if you're not 100% familiar with all the tools & tricks
-used here.
+thing as-is is a bad idea if you're not 100% familiar with all the tools & tricks used
+here. That being said, if you want more info on anything used here, feel free to open an
+issue!
 
 After generating, look for `TODO` in the code.
 
