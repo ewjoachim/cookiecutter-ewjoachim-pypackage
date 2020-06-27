@@ -89,3 +89,4 @@ Planned improvements:
 - [nox](https://nox.thea.codes/en/stable/) instead of
   [tox](https://tox.readthedocs.io/en/latest/)
 - Testing this cookiecutter
+- Travis to GitHub Actions, maybe
