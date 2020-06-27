@@ -9,7 +9,8 @@ used here.
 
 After generating, look for `TODO` in the code.
 
-Features:
+## Features:
+
 - Code of conduct: [Contributor Covenant](https://www.contributor-covenant.org/)
 - Readme with a lot of badges to show you're cool
 - GitHub Codeowners
@@ -83,7 +84,8 @@ Features:
     - Test can be launched without any arguments (`pytest`). Launch low-level tests
       first. Perfecto for use with `pytest --sw`.
 
-Planned improvements:
+## Planned improvements:
+
 - Click is nice, but maybe we can find better. I'd like to evaluate
   [cleo](https://github.com/sdispater/cleo) and put some colors on!
 - Switch to poetry ?
