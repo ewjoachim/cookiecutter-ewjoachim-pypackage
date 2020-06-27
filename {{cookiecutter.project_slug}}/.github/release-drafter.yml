@@ -21,11 +21,6 @@ version-resolver:
 exclude-labels:
 - 'PR: Skip changelog'
 template: |
-  ## Migrations
-
-  None (TODO: replace if there are migrations)
-  https://github.com/peopledoc/procrastinate/tree/master/procrastinate/sql/migrations
-
   ## Uncategorized (TODO: please categorize)
 
   $CHANGES

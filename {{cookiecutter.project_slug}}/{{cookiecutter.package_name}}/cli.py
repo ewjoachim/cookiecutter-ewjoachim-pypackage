@@ -4,7 +4,7 @@ import os
 
 import click
 
-from {{ cookiecutter.package_name }} import exceptions, utils
+from {{ cookiecutter.package_name }} import __version__, exceptions, utils
 
 logger = logging.getLogger(__name__)
 
@@ -61,7 +61,7 @@ def handle_errors():
     help="Use multiple times to increase verbosity",
 )
 @click.version_option(
-    procrastinate.__version__, "-V", "--version", prog_name=PROGRAM_NAME
+    __version__, "-V", "--version", prog_name=PROGRAM_NAME
 )
 @handle_errors()
 def cli(ctx: click.Context, app: str, **kwargs) -> None:

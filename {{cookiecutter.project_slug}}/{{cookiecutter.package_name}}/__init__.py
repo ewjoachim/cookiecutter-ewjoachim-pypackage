@@ -1,4 +1,4 @@
-from procrastinate import metadata as _metadata_module
+from {{ cookiecutter.package_name }} import metadata as _metadata_module
 
 __all__ = []
 

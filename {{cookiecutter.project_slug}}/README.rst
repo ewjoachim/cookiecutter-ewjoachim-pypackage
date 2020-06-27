@@ -1,5 +1,7 @@
-Procrastinate: PostgreSQL-based Task Queue for Python
-=====================================================
+{{ cookiecutter.project_name_title }}: {{ cookiecutter.description }}
+===
+
+.. TODO: adapt the number of equal signs to match the title length
 
 .. image:: https://badge.fury.io/py/{{ cookiecutter.pypi_name }}.svg
     :target: https://pypi.org/pypi/{{ cookiecutter.pypi_name }}
@@ -18,7 +20,7 @@ Procrastinate: PostgreSQL-based Task Queue for Python
     :alt: Coverage Status
 
 .. image:: https://img.shields.io/badge/License-MIT-green.svg
-    :target: https://github.com/peopledoc/procrastinate/blob/master/LICENSE
+    :target: https://github.com/{{ cookiecutter.github_full_name }}/blob/master/LICENSE
     :alt: MIT License
 
 .. image:: https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg

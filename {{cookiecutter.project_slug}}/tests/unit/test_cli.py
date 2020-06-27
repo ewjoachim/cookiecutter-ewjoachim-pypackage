@@ -57,7 +57,7 @@ def test_handle_errors_no_error():
 def test_main(mocker):
 
     environ = mocker.patch("os.environ", {"LANG": "fr-FR.UTF-8"})
-    mocker.patch("procrastinate.cli.cli")
+    mocker.patch("{{ cookiecutter.package_name }}.cli.cli")
     cli.main()
 
     assert environ == {"LANG": "fr-FR.UTF-8", "LC_ALL": "C.UTF-8"}

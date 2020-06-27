@@ -13,10 +13,11 @@ def entrypoint(cli_runner):
 
 def test_cli(entrypoint):
     result = entrypoint()
+    # assuming subcommand is required
     assert result.output.startswith("Usage:")
 
 
 def test_version(entrypoint):
     result = entrypoint("--version")
 
-    assert "procrastinate, version " + __version__ == result.output.strip()
+    assert result.output.strip() == f"{cli.PROGRAM_NAME}, version {__version__}"

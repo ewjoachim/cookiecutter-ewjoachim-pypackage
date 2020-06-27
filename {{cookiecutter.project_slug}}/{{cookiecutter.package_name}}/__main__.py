@@ -1,4 +1,4 @@
-from procrastinate import cli
+from {{ cookiecutter.package_name }} import cli
 
 
 def main(name):
