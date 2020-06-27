@@ -1,6 +1,6 @@
 # Main maintainers
 *                       {{ cookiecutter.codeowners }}
-{% if documentation_codeowners %}
+{% if cookiecutter.documentation_codeowners %}
 
 # Documentation
 /docs/                  {{ cookiecutter.documentation_codeowners }}
