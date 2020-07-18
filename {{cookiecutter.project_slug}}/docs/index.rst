@@ -9,5 +9,6 @@
    discussions
    reference
    glossary
+   conduct
    contributing
    changelog
