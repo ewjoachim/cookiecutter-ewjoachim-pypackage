@@ -23,7 +23,7 @@ jobs:
     - stage: test
       python: {{ version }}
       env:
-        TOX_ENV: py{{ version.replace(".", "") }}-tests
+        TOX_ENV: py{{- version.strip().replace(".", "") -}}-tests
     {% endfor %}
 
     - python: {{ cookiecutter.python_version_main }}
